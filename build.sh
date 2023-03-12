@@ -12,7 +12,7 @@ fi
 
 basePath=${filePath%.*}
 as -o $basePath.o $basePath.s
-ld -o $basePath $basePath.o
+ld -o $basePath.exe $basePath.o
 
 # run the program
-$basePath
+$basePath.exe
